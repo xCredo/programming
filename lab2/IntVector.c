@@ -88,7 +88,7 @@ int int_vector_push_back(IntVector *v, int item)
 	return 0;
 }
 
-void int_vector_pop_back(IntVector *v) //нужно подумать и исправить
+void int_vector_pop_back(IntVector *v) /*используется для удаления последнего элемента вектора сзади и уменьшения размера вектора на 1. Но последний элемент вектора не удаляется навсегда*/
 {
 	if (v->size != 0) 
 		v->size--;
