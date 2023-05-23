@@ -158,4 +158,5 @@ void print_vector(IntVector *v)
 	printf("\n");
 	printf("IntVector  \n data = %p\n size = %ld\n capacity = %ld\n", v->data, v->size, v->capacity);
 	printf("\n");
+    printf("\n");
 }

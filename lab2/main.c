@@ -8,7 +8,8 @@ int main()
 	int x; scanf("%d",&x);
 	while (x<=0)
 	{
-		printf("Erorr");
+		printf("Error\n");
+        return -1;
 	}
     IntVector *array = int_vector_new(x);
     print_vector(array);
@@ -32,7 +33,8 @@ int main()
 	scanf("%d",&x);
 	while (x>array->capacity)
 	{
-		printf("Erorr");
+		printf("Error\n");
+        return -1;
 	}
     z = int_vector_get_item(array,x);
     printf("%d\n",z);
@@ -44,7 +46,8 @@ int main()
 	scanf("%d",&x);
 	while (y>array->capacity)
 	{
-		printf("Erorr");
+		printf("Error\n");
+        return -1;
 	}
 	
     int_vector_set_item(array,y,x);
@@ -81,5 +84,4 @@ int main()
     print_vector(array);
     int_vector_free(array);
     int_vector_free(a);
-    return 0;
 }
